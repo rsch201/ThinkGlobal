@@ -110,8 +110,7 @@
             font-size: 14px;
             top: 0px;
             left: 50%;
-            transform: translate(-50%);
-                   
+            transform: translate(-50%);              
         }
 
         #more1, #more2, #more3, #more4, #more5, #more6 {
@@ -148,8 +147,10 @@
     <table class="exchange-table" ><!--Exchange table-->
         <tr>
             <td>
-                <div  class="container">
-                    <img id="img1" src="https://is2-ssl.mzstatic.com/image/thumb/Purple118/v4/b9/65/47/b9654773-e8ed-5343-32c3-486fb9e524d3/source/256x256bb.jpg"/>
+                <div class="container">
+                    <div>
+                        <span id="img1"><img  src="https://is2-ssl.mzstatic.com/image/thumb/Purple118/v4/b9/65/47/b9654773-e8ed-5343-32c3-486fb9e524d3/source/256x256bb.jpg"/></span>
+                    </div>
                     <div class="text-block"><!--text behind image-->
                         <span id="more1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non incidunt, modi quo officiis fugiat quod exercitationem corporis praesentium dignissimos porro voluptates perferendis accusamus consequuntur illo molestias repudiandae, reprehenderit ab nihil.</span>
                     </div>
@@ -307,8 +308,7 @@
     <script>
         $(document).ready(function() {
             $('#show-more1').on('click', function() {
-                $('#more1').toggle();
-                
+                $('#more1').toggle()     
                 
             })
             $('#show-more2').on('click', function() {
@@ -331,6 +331,31 @@
                 $('#more6').toggle()
                 
             })
+            $('#show-more1').on('click', function() {
+                $('#more1').css('background', 'white');     
+                
+            })
+            $('#show-more2').on('click', function() {
+                $('#more2').css('background', 'white');     
+                
+            })
+            $('#show-more3').on('click', function() {
+                $('#more3').css('background', 'white');     
+                
+            })
+            $('#show-more4').on('click', function() {
+                $('#more4').css('background', 'white');     
+                
+            })
+            $('#show-more5').on('click', function() {
+                $('#more5').css('background', 'white');     
+                
+            })
+            $('#show-more6').on('click', function() {
+                $('#more6').css('background', 'white');     
+                
+            })
+
                 
         });
     </script>
